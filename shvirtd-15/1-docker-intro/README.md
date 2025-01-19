@@ -29,3 +29,17 @@ shvirtd-15: docker intro
 ![5-01](images/5-01.png)
 ![5-01](images/5-01.png)
 В предупреждении сказано, что в compose-файле больше нет одного из сервисов. Чтобы привести запущенные проекты в соответствие с конфигом можно одной командой остановить лишнее.
+
+> В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
+
+Непонятно, о каком именно состоянии  `compose.yaml` идёт речь в задании. Пусть будет с include:
+```yaml
+include:
+  - docker-compose.yml
+services:
+  portainer:
+    network_mode: host
+    image: portainer/portainer-ce:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+```
