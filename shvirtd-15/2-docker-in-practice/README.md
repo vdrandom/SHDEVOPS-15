@@ -20,8 +20,9 @@ shvirtd-15: docker in practice
 Задача 4
 --------
 ![4-01](images/4-01.png)
-[deploy (из registry)](https://github.com/vdrandom/shvirtd-example-python/blob/solution/deploy)
-[deploy (через build)](https://github.com/vdrandom/shvirtd-example-python/blob/solution/deploy)
+* [deploy (из registry)](https://github.com/vdrandom/shvirtd-example-python/blob/solution/deploy)
+* [deploy (через build)](https://github.com/vdrandom/shvirtd-example-python/blob/solution/deploy)
+
 Ссылки на репозиторий в [Задаче 1](#задача-1)
 
 Задача 6
