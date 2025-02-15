@@ -16,7 +16,7 @@ shter-15: 01
    # tail -1 .gitignore
    personal.auto.tfvars
    ```
-3. random_password в [tfstate](./terraform.tfstate):
+3. random_password в [tfstate](files/terraform.tfstate):
    ```
    # jq -r < terraform.tfstate '.resources[].instances[].attributes.result'
    DpXr1S0djRtitCSm
@@ -58,7 +58,7 @@ shter-15: 01
    ```
    невалидный референс поля - random_string_FAKE не объявлен, у random_password нет поля resulT
 
-5. [diff](./fix.diff)
+5. [diff](files/fix.diff)
    ```
    # docker ps
    CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
@@ -79,7 +79,7 @@ shter-15: 01
    CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
    41f7a03be3f0   97662d24417b   "/docker-entrypoint.…"   19 seconds ago   Up 18 seconds   0.0.0.0:9090->80/tcp   example_DpXr1S0djRtitCSm
    ```
-7. `terraform destroy`, [tfstate](./terraform-after-destroy.tfstate)
+7. `terraform destroy`, [tfstate](files/terraform-after-destroy.tfstate)
 8. [код](https://github.com/netology-code/ter-homeworks/blob/main/01/src/main.tf#L26):
    ```hcl
    resource "docker_image" "..." {
