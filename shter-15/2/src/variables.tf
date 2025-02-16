@@ -29,11 +29,6 @@ variable "subnets" {
   }
 }
 
-variable "environment" {
-  type    = string
-  default = "develop"
-}
-
 ###metadata
 
 variable "global_metadata" {
