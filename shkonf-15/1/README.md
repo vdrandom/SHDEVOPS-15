@@ -6,9 +6,9 @@ shkonf-15: 01
 
 1. ![1-01](images/1-01.png)
 
-2. см. 4.
+2. см. 5.
 
-3. Использовал docker. Centos 7 безнадёжно протух, взял OracelLinux 9.
+3. Использовал docker. CentOS 7 безнадёжно протух, взял OracelLinux 9.
 
 4. ![1-04](images/1-04.png)
 
